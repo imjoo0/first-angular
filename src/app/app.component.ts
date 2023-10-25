@@ -2,9 +2,14 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: `
+    <div>
+      <h1>{{title}}</h1>
+      <app-movies></app-movies>
+    </div>
+  `,
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'first-angular';
+  title = 'MovieList';
 }
